@@ -1,4 +1,8 @@
+import Image from "next/image";
+
 import Looking from "./looking";
+import cocora from '../public/cocora.jpg'
+
 
 export default function Banner() {
   const sectionStyle = {
@@ -19,20 +23,21 @@ export default function Banner() {
     position: "absolute",
   };
 
- 
-
   return (
     <section id="outer_banner" style={sectionStyle}>
       <div id="bg_cycler" style={bg_cyclerStyle}>
         <div style={bg_cyclerImageStyle}>
-          <img
+          <Image
+            alt="cocora"
             class="lcp_reduced"
-            src="https://www.semana.com/resizer/IYlJDSnB6zlyI_ueOZCOPi61CnM=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/JFRZQ4JICREXZCO4GQPC36LMSQ.jpg"
-            width="100%"
+            src={cocora}
+            width="100%" height="100%"
+            layout="responsive"
+            objectFit="contain"
           />
         </div>
 
-        <Looking ></Looking>
+        <Looking></Looking>
       </div>
     </section>
   );
