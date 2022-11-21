@@ -1,7 +1,6 @@
-import searchStyles from '../styles/search.module.scss'
+import searchStyles from '../../styles/search.module.scss'
 
 export default function Search() {
-
 
   return (
     <div  className={`field has-addons  ${searchStyles.searchDestination}`}>

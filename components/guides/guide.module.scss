@@ -1,0 +1,43 @@
+.guide {
+
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    color: #4a4a4a;
+    width: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    :global .guideHeader {
+       width: 100%;
+       flex-direction: column;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-weight: bold;
+       padding-top: 1.5rem;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    :global .card-content{
+
+        span{
+            font-size: 12px;
+            font-weight: bold;
+            text-align: justify;
+        }
+
+        p{
+            font-size: 14px;
+            margin-top: .5rem;
+
+        }
+    }
+}
+
